@@ -12,7 +12,14 @@
 			</h3>
 		</div>
 
-		<button @click="open = ! open">
+		<div class="hidden sm:flex sm:gap-8">
+			<a class="text-xs" href="#inicio">Inicio</a>
+			<a class="text-xs" href="#conocimientos">Conocimientos</a>
+			<a class="text-xs" href="#proyectos">Proyectos</a>
+			<a class="text-xs" href="#contacto">Contacto</a>
+		</div>
+
+		<button class="sm:hidden" @click="open = ! open">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
