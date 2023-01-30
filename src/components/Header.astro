@@ -1,49 +1,56 @@
 ---
 ---
 
-<div x-data="{open:false}" class="sticky top-0 z-20">
-  <header class="flex items-center justify-between bg-neutral-800 p-5">
-    <div class="flex items-center gap-2">
-      <div class="relative rounded-full bg-blue-600 p-4 font-bold">
-        <p class="absolute top-[10%] left-[30%] text-xl">D</p>
-      </div>
-      <h3 class="tracking-wider">
-        <span class="font-bold">David</span> Mendoza
-      </h3>
-    </div>
+<div
+	x-data="{open:false}"
+	class="sticky top-0 z-20 sm:static sm:mx-10 md:mx-16 md:rounded-t-[4rem]"
+>
+	<header
+		class="flex items-center justify-between bg-neutral-800 p-5 md:rounded-t-[4rem] md:pt-10"
+	>
+		<div class="flex items-center gap-2">
+			<div class="relative rounded-full bg-blue-600 p-4 font-bold">
+				<p class="absolute top-[10%] left-[30%] text-xl">D</p>
+			</div>
+			<h3 class="tracking-wider md:text-xl">
+				<span class="font-bold">David</span> Mendoza
+			</h3>
+		</div>
 
-    <div class="hidden text-sm sm:flex sm:gap-8">
-      <a href="#inicio">Inicio</a>
-      <a href="#conocimientos">Conocimientos</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </div>
+		<div class="hidden text-sm sm:flex sm:gap-8 md:text-base">
+			<a class="md:hover:text-neutral-500" href="#inicio">Inicio</a>
+			<a class="md:hover:text-neutral-500" href="#conocimientos"
+				>Conocimientos</a
+			>
+			<a class="md:hover:text-neutral-500" href="#proyectos">Proyectos</a>
+			<a class="md:hover:text-neutral-500" href="#contacto">Contacto</a>
+		</div>
 
-    <button class="sm:hidden" @click="open = ! open">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="2"
-        stroke="currentColor"
-        class="h-6 w-6"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-      </svg>
-    </button>
-  </header>
+		<button class="sm:hidden" @click="open = ! open">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="2"
+				stroke="currentColor"
+				class="h-6 w-6"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+			</svg>
+		</button>
+	</header>
 
-  <div
-    x-show="open"
-    x-transition
-    class="sticky top-0 z-10 flex h-screen w-full flex-col items-center justify-center gap-10 bg-neutral-800 text-2xl text-neutral-500"
-  >
-    <a @click="open = !open" href="#inicio">Inicio</a>
-    <a @click="open = !open" href="#conocimientos">Conocimientos</a>
-    <a @click="open = !open" href="#proyectos">Proyectos</a>
-    <a @click="open = !open" href="#contacto">Contacto</a>
-  </div>
+	<div
+		x-show="open"
+		x-transition
+		class="sticky top-0 z-10 flex h-screen w-full flex-col items-center justify-center gap-10 bg-neutral-800 text-2xl text-neutral-500"
+	>
+		<a @click="open = !open" href="#inicio">Inicio</a>
+		<a @click="open = !open" href="#conocimientos">Conocimientos</a>
+		<a @click="open = !open" href="#proyectos">Proyectos</a>
+		<a @click="open = !open" href="#contacto">Contacto</a>
+	</div>
 </div>
