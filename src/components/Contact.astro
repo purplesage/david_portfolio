@@ -1,36 +1,36 @@
 ---
-import PhoneSVG from './PhoneSVG.astro';
-import MapPinSVG from './MapPinSVG.astro';
-import MailSVG from './MailSVG.astro';
+import PhoneSVG from "./PhoneSVG.astro";
+import MapPinSVG from "./MapPinSVG.astro";
+import MailSVG from "./MailSVG.astro";
 ---
 
-<section class="mt-10" id="contacto">
-	<header>
-		<h2
-			class="text-2xl font-bold text-neutral-200 tracking-wide border-b-2 border-blue-600 w-fit"
-		>
-			Contacto
-		</h2>
-		<p class="text-xs text-neutral-400 mt-2">Trabajemos juntos</p>
-	</header>
-	<div class="flex flex-col gap-5 mt-5">
-		<div class="flex items-center gap-2">
-			<span class="text-blue-600">
-				<PhoneSVG />
-			</span>
-			<h3>0424-132-15-92</h3>
-		</div>
-		<div class="flex items-center gap-2">
-			<span class="text-blue-600">
-				<MapPinSVG />
-			</span>
-			<h3>Caracas</h3>
-		</div>
-		<div class="flex items-center gap-2">
-			<span class="text-blue-600">
-				<MailSVG />
-			</span>
-			<h3>davidmendoza.dev@gmail.com</h3>
-		</div>
-	</div>
+<section class="mx-auto mt-16 sm:w-5/6" id="contacto">
+  <header>
+    <h2
+      class="w-fit border-b-2 border-blue-600 text-2xl font-bold tracking-wide text-neutral-200"
+    >
+      Contacto
+    </h2>
+    <p class="mt-1 text-xs text-neutral-400">Trabajemos juntos</p>
+  </header>
+  <div class="mt-8 flex flex-col gap-5">
+    <div class="flex items-center gap-2">
+      <span class="text-blue-600">
+        <PhoneSVG />
+      </span>
+      <h3>0424-132-15-92</h3>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-blue-600">
+        <MapPinSVG />
+      </span>
+      <h3>Caracas</h3>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-blue-600">
+        <MailSVG />
+      </span>
+      <h3>davidmendoza.dev@gmail.com</h3>
+    </div>
+  </div>
 </section>
