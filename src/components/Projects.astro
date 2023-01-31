@@ -1,5 +1,9 @@
 ---
 import TuboSVG from './TuboSVG.astro';
+import Lyriks from './projects/Lyriks.astro';
+import Tik from './projects/Tik.astro';
+import Metaversus from './projects/Metaversus.astro';
+import Todo from './projects/Todo.astro';
 ---
 
 <section class="mt-10" id="proyectos">
@@ -10,194 +14,14 @@ import TuboSVG from './TuboSVG.astro';
 		</h2>
 	</div>
 
-	<div
-		class="mt-10 rounded-xl border-2 border-neutral-700 bg-gradient-to-b from-neutral-900 to-neutral-800 shadow-[0_15px_30px_rgba(8,_112,_184,_0.2)] sm:mx-auto sm:w-3/4"
-	>
-		<div class="flex flex-col items-center gap-5">
-			<img
-				class="rounded-t-xl border-b-2 border-neutral-700"
-				src="/lyrikz.webp"
-				alt="project image"
-			/>
-			<div class="p-3">
-				<div class="mb-5 flex flex-col items-center">
-					<h3 class="text-2xl font-bold tracking-wide text-blue-700 underline">
-						Lyrikz
-					</h3>
-					<p class="text-xs text-neutral-500 sm:text-base">Clon de spotify</p>
-				</div>
-				<ul
-					class="flex flex-col items-center text-sm text-neutral-400 sm:text-base"
-				>
-					<li>Vite (react)</li>
-					<li>Redux</li>
-					<li>Tailwind</li>
-					<li>Swiper</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="my-5 flex justify-evenly">
-			<a
-				href="https://daml-lyriks.netlify.app/"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text rounded-xl border-2 border-blue-600 bg-neutral-700 py-2 px-4 text-xs text-neutral-300"
-				>Preview</a
-			>
-
-			<a
-				href="https://github.com/purplesage/lyriks_app"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text rounded-xl border-2 border-neutral-200 bg-neutral-700 py-2 px-4 text-xs text-neutral-300"
-				>Código</a
-			>
-		</div>
+	<div class="flex flex-col lg:flex-row">
+		<Lyriks />
+		<Tik />
 	</div>
 
-	<div
-		class="mt-10 rounded-xl border-2 border-neutral-700 bg-gradient-to-b from-neutral-900 to-neutral-800 shadow-[0_15px_30px_rgba(252,3,177,_0.1)] sm:mx-auto sm:w-3/4"
-	>
-		<div class="flex flex-col items-center gap-5">
-			<img
-				class="rounded-t-xl border-b-2 border-neutral-700"
-				src="/tik-tik.webp"
-				alt="project image"
-			/>
-			<div class="p-3">
-				<div class="mb-5 flex flex-col items-center">
-					<h3 class="text-2xl font-bold tracking-wide text-pink-600 underline">
-						Tik-Tik
-					</h3>
-					<p class="text-xs text-neutral-500 sm:text-base">Clon de TikTok</p>
-				</div>
-				<ul
-					class="flex flex-col items-center text-sm text-neutral-400 sm:text-base"
-				>
-					<li>NextJS (react)</li>
-					<li>Typescript</li>
-					<li>Zustand</li>
-					<li>Tailwind</li>
-					<li>Sanity</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="my-5 flex justify-evenly">
-			<a
-				href="https://tiktik-puce.vercel.app/"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text rounded-xl border-2 border-blue-600 bg-neutral-700 py-2 px-4 text-xs text-neutral-300"
-				>Preview</a
-			>
-
-			<a
-				href="https://github.com/purplesage/tiktik_app"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text rounded-xl border-2 border-neutral-200 bg-neutral-700 py-2 px-4 text-xs text-neutral-300"
-				>Código</a
-			>
-		</div>
-	</div>
-
-	<div
-		class="mt-10 rounded-xl border-2 border-neutral-700 bg-gradient-to-b from-neutral-900 to-neutral-800 shadow-[0_15px_30px_rgba(126,2,209,_0.2)] sm:mx-auto sm:w-3/4 md:transform md:transition md:duration-500 md:hover:scale-110"
-	>
-		<div class="flex flex-col items-center gap-5">
-			<img
-				class="rounded-t-xl border-b-2 border-neutral-700"
-				src="/metaversus.webp"
-				alt="project image"
-			/>
-			<div class="p-3">
-				<div class="mb-5 flex flex-col items-center">
-					<h3
-						class="text-2xl font-bold tracking-wide text-purple-700 underline"
-					>
-						Metaversus
-					</h3>
-					<p class="text-center text-xs text-neutral-500 sm:text-base">
-						Landing page con un look moderno
-					</p>
-				</div>
-				<ul
-					class="flex flex-col items-center text-sm text-neutral-400 sm:text-base"
-				>
-					<li>NextJS (react)</li>
-					<li>Tailwind</li>
-					<li>Framermotion</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="my-5 flex justify-evenly">
-			<a
-				href="https://metaversus-app-amber.vercel.app/"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text rounded-xl border-2 border-blue-600 bg-neutral-700 py-2 px-4 text-xs text-neutral-300"
-				>Preview</a
-			>
-
-			<a
-				href="https://github.com/purplesage/metaversus_app"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text rounded-xl border-2 border-neutral-200 bg-neutral-700 py-2 px-4 text-xs text-neutral-300"
-				>Código</a
-			>
-		</div>
-	</div>
-
-	<div
-		class="mt-10 rounded-xl border-2 border-neutral-700 bg-gradient-to-b from-neutral-900 to-neutral-800 shadow-[0_15px_30px_rgba(250,85,220,_0.2)] sm:mx-auto sm:w-3/4"
-	>
-		<div class="flex flex-col items-center gap-5">
-			<img
-				class="rounded-t-xl border-b-2 border-neutral-700"
-				src="/todolist.webp"
-				alt="project image"
-			/>
-			<div class="p-3">
-				<div class="mb-5 flex flex-col items-center">
-					<h3 class="text-2xl font-bold tracking-wide text-green-600 underline">
-						TO-DO
-					</h3>
-					<p class="text-center text-xs text-neutral-500 sm:text-base">
-						Lista de tareas mejorada <br /> con autenticación, base de datos <br
-						/> y file storage
-					</p>
-				</div>
-				<ul
-					class="flex flex-col items-center text-sm text-neutral-400 sm:text-base"
-				>
-					<li>Vite (react)</li>
-					<li>Material UI</li>
-					<li>PostCSS</li>
-					<li>Firebase</li>
-				</ul>
-			</div>
-		</div>
-		<div class="my-5 flex justify-evenly">
-			<a
-				href="https://todo-list-react-vite3.vercel.app/"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text rounded-xl border-2 border-blue-600 bg-neutral-700 py-2 px-4 text-xs text-neutral-300"
-				>Preview</a
-			>
-
-			<a
-				href="https://github.com/purplesage/todoList_React_vite3"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text rounded-xl border-2 border-neutral-200 bg-neutral-700 py-2 px-4 text-xs text-neutral-300"
-				>Código</a
-			>
-		</div>
+	<div class="flex flex-col lg:flex-row">
+		<Metaversus />
+		<Todo />
 	</div>
 </section>
 
