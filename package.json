@@ -23,6 +23,7 @@
     "tailwindcss-intersect": "^1.0.3"
   },
   "devDependencies": {
+    "animated-tailwindcss": "^4.0.0",
     "prettier": "2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.2"
   }
