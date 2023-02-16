@@ -1,10 +1,11 @@
 ---
 import TuboSVG from './TuboSVG.astro';
-import Lyriks from './projects/Lyriks.astro';
-import Tik from './projects/Tik.astro';
-import Metaversus from './projects/Metaversus.astro';
-import Todo from './projects/Todo.astro';
-import Rapidsurvey from './projects/Rapidsurvey.astro';
+import ProjectLayout from './ProjectLayout.astro';
+import * as Lyriks from './projects/Lyriks.md';
+import * as Metaversus from './projects/Metaversus.md';
+import * as Rapidsurvey from './projects/Rapidsurvey.md';
+import * as Tiktik from './projects/Tiktik.md';
+import * as Todo from './projects/Todo.md';
 ---
 
 <section class="mx-auto mt-10 lg:mt-20 xl:mt-28" id="proyectos">
@@ -16,14 +17,17 @@ import Rapidsurvey from './projects/Rapidsurvey.astro';
 	</div>
 
 	<div class="mx-auto flex flex-col lg:flex-row">
-		<Lyriks />
-		<Tik />
+		<ProjectLayout project={Lyriks.frontmatter} />
+		<ProjectLayout project={Tiktik.frontmatter} />
+	</div>
+
+	<div class="mx-auto flex flex-col lg:flex-row">
+		<ProjectLayout project={Metaversus.frontmatter} />
 	</div>
 
 	<div class="lg:flex-grow-2 flex flex-col gap-8 lg:flex-row">
-		<Metaversus />
-		<Rapidsurvey />
-		<Todo />
+		<ProjectLayout project={Rapidsurvey.frontmatter} />
+		<ProjectLayout project={Todo.frontmatter} />
 	</div>
 </section>
 <hr class="mx-auto mt-16 hidden w-1/2 border border-neutral-700 lg:block" />
